@@ -6,7 +6,7 @@ metadata:
     nginx.ingress.kubernetes.io/proxy-body-size: "0"
 spec:
   rules:
-  - host: vote.quickstart-application.example.com
+  - host: 
     http:
       paths:
       - path: /
@@ -16,10 +16,10 @@ spec:
             name: vote
             port:
               number: 80
-  - host: result.quickstart-application.example.com
+  - host: 
     http:
       paths:
-      - path: /
+      - path: /result
         pathType: Prefix
         backend:
           service:
