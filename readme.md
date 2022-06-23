@@ -1,6 +1,6 @@
-dev env:  
-build: werf build --platform linux/amd64 --dev  
-run:  werf run  --platform linux/amd64 --docker-options="-d -p 80:3000" --dev  
+werf quickstart sample application
+=========
 
-build prod env: werf build  
-run: werf run --docker-options="-d -p 80:3000"
+This is voting application, which used as a sample in [the quickstart](https://werf.io/documentation/quickstart.html) of the [werf project](https://github.com/werf/werf).
+
+The original code has been taken from the following repo: [https://github.com/dockersamples/example-voting-app](https://github.com/dockersamples/example-voting-app).

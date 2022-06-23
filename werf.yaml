@@ -1,5 +1,14 @@
-project: yanao-subsidies
 configVersion: 1
+project: quickstart-application
 ---
-image: yanao-backend
-dockerfile: ./backend/Dockerfile
+image: vote
+dockerfile: Dockerfile
+context: vote
+---
+image: result
+dockerfile: Dockerfile
+context: result
+---
+image: worker
+dockerfile: Dockerfile
+context: worker
